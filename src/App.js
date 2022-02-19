@@ -1,6 +1,5 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import getPokemon from './getPokemon.js';
 import AllPokemon from './AllPokemon.js'
 
 function App() {
@@ -32,7 +31,7 @@ function App() {
       <header className="App-header">
         <AllPokemon list = {allPokemon} currPoke = {currPoke} onChange={handleChange}/>
         <div>
-          <img src={currPokePhoto} />
+          <img src={currPokePhoto} alt={currPoke} />
         </div>
 
       </header>
