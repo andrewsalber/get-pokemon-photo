@@ -13,14 +13,6 @@ function Header() {
                     <use href="#bootstrap"></use></svg>
                 <span class="fs-4">Pokemon Playtime!</span>
                 </a>
-
-                <ul class="nav nav-pills">
-                <li className="nav-item"><a href="#" className="nav-link active" aria-current="page">Home</a></li>
-                <li className="nav-item"><a href="#" className="nav-link">Features</a></li>
-                <li className="nav-item"><a href="#" className="nav-link">Pricing</a></li>
-                <li className="nav-item"><a href="#" className="nav-link">FAQs</a></li>
-                <li className="nav-item"><a href="#" className="nav-link">About</a></li>
-                </ul>
             </header>
         </div>
     )
