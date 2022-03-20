@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import AllPokemon from './AllPokemon.js'
+import Header from './Header.js'
 
 function App() {
   const [allPokemon, setAllPokemon] = useState([]);
@@ -28,12 +29,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <Header />
+      <header>
         <AllPokemon list = {allPokemon} currPoke = {currPoke} onChange={handleChange}/>
         <div>
-          <img src={currPokePhoto} alt={currPoke} />
+          <img className="Photo" src={currPokePhoto} alt={currPoke} />
         </div>
-
       </header>
     </div>
   );
